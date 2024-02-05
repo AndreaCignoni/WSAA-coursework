@@ -1,0 +1,42 @@
+N
+N	53.3464
+N	53.3464	-6.29461
+N	53.3464	-6.29461	D216
+N	53.3464	-6.29461	D216	05 Feb 2024
+N	53.3464	-6.29461	D216	05 Feb 2024	D216\nDublin Heuston to Portlaoise\nExpected Departure 15:25
+N	53.3464	-6.29461	D216	05 Feb 2024	D216\nDublin Heuston to Portlaoise\nExpected Departure 15:25	To Portlaoise
+N
+N	53.3531
+N	53.3531	-6.24591
+N	53.3531	-6.24591	D812
+N	53.3531	-6.24591	D812	05 Feb 2024
+N	53.3531	-6.24591	D812	05 Feb 2024	D812\nDublin Connolly to Drogheda\nExpected Departure 15:25
+N	53.3531	-6.24591	D812	05 Feb 2024	D812\nDublin Connolly to Drogheda\nExpected Departure 15:25	Northbound
+N
+N	53.3531
+N	53.3531	-6.24591
+N	53.3531	-6.24591	D913
+N	53.3531	-6.24591	D913	05 Feb 2024
+N	53.3531	-6.24591	D913	05 Feb 2024	D913\nDublin Connolly to Maynooth\nExpected Departure 15:17
+N	53.3531	-6.24591	D913	05 Feb 2024	D913\nDublin Connolly to Maynooth\nExpected Departure 15:17	Northbound
+N
+N	53.3831
+N	53.3831	-6.4242
+N	53.3831	-6.4242	D376
+N	53.3831	-6.4242	D376	05 Feb 2024
+N	53.3831	-6.4242	D376	05 Feb 2024	D376\nClonsilla to M3 Parkway\nExpected Departure 15:18
+N	53.3831	-6.4242	D376	05 Feb 2024	D376\nClonsilla to M3 Parkway\nExpected Departure 15:18	Northbound
+R
+R	53.3831
+R	53.3831	-6.4242
+R	53.3831	-6.4242	D912
+R	53.3831	-6.4242	D912	05 Feb 2024
+R	53.3831	-6.4242	D912	05 Feb 2024	D912\n14:47 - Dublin Connolly to Maynooth (0 mins late)\nDeparted Clonsilla next stop Leixlip (Confey)
+R	53.3831	-6.4242	D912	05 Feb 2024	D912\n14:47 - Dublin Connolly to Maynooth (0 mins late)\nDeparted Clonsilla next stop Leixlip (Confey)	Northbound
+R
+R	53.6794
+R	53.6794	-6.24253
+R	53.6794	-6.24253	D810
+R	53.6794	-6.24253	D810	05 Feb 2024
+R	53.6794	-6.24253	D810	05 Feb 2024	D810\n14:22 - Dublin Connolly to Drogheda (5 mins late)\nDeparted Laytown next stop Drogheda
+R	53.6794	-6.24253	D810	05 Feb 2024	D810\n14:22 - Dublin Connolly to Drogheda (5 mins late)\nDeparted Laytown next stop Drogheda	Northbound

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<breakfast_menu>
+    <coffees_and_beverages>
+        <name>Espresso</name>
+        <price>2.00€</price>
+        <description>Energizing shot brewed from armatic south american top quality grounded coffee beans: </description><calories>4</calories>
+        <name>Cappuccino</name>
+        <price>3.00€</price>
+        <description>Sweet foamy blend of expresso and real cow milk directly coming with love from our cow Carolina: </description><calories>25</calories>
+        <name>Fresh range Jouice</name>
+        <price>4.00€</price>
+        <description>Carefully mixed jouice from delicious freshly picked Sicilian oranges. Proud of our land! Calories: </description><calories>15</calories>
+    </coffees_and_beverages>
+    <Sweets_and_pastries>
+        <name>Cornetto</name>
+        <price>2.50€</price>
+        <description>Cornetti (“little horns”) are an Italian style of laminated pastry. The final shape is similar to a croissant, but the dough takes less hands-on time than a French croissant recipe. A cornetto has a soft, dense interior with flaky layers of butter throughout. Calories:</description><calories>150</calories>
+        <name>Croissant</name>
+        <price>2.00€</price>
+        <description>A croissant is a laminated, yeast-leavened bakery product that contains dough/roll-in fat layers to create a flaky, crispy texture. Croissants belong to the Viennoiserie or pastry category of baked goods along with brioche, Danish and puff pastries. Calories: </desciption><calories>80</calories>
+        <name>Torta della Nonna</name>
+         <price>3.50€</price>
+        <description>This sumptuous torta della nonna recipe from Valeria Necchio offers a slice of Tuscan indulgence, with a sweet pastry base giving way to lemon- and vanilla-scented custard filling. Topped off with a thin layer of pastry and crunchy pine nuts, this tart is a real treat. Calories:</desciption><calories>250</calories>
+        <name>Porridge</name>
+         <price>3.50€</price>
+        <description>Once you’ve mastered the basic porridge recipe, get creative and add your favourite toppings. Think fruit, toasted nuts and honey – the options are endless! Check out some of our favourite combos below… Calories: </desciption><calories>80</calories>
+    </Sweets_and_pastries>
+</breakfast_menu>
