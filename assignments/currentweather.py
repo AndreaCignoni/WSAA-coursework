@@ -25,7 +25,7 @@ weather_data = json.loads(response.text)
 
 current_temperature = weather_data['current']['temperature_2m']
 # Printing the current temperature only
-print (f"{current_temperature}°C")
+print (f"The current temperature is: {current_temperature}°C")
 
 # Adding the wind direction variable.
 new_url = f"https://api.open-meteo.com/v1/forecast?latitude=51.894469818054255&longitude=-8.467380631463682&current=wind_direction_10m&hourly=temperature_2m"
@@ -38,4 +38,4 @@ weather_data1 = json.loads(response_1.text)
 current_wind_direction = weather_data1['current']['wind_direction_10m']
 
 # Printing the current temperature only
-print (f"{current_wind_direction}°")
+print (f"The current wind direction is: {current_wind_direction}°")
