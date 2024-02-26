@@ -1,1 +1,5 @@
+# DS_Store file
 .DS_Store
+
+# Config file
+config.py
