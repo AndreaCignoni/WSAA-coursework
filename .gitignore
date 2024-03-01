@@ -3,3 +3,9 @@
 
 # Config file
 config.py
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
