@@ -1,0 +1,37 @@
+Title: Design Document for a Music Library REST API
+
+Introduction:
+Purpose: This document outlines the design of a RESTful API for a music library system.
+Objective: To provide developers with clear guidelines for building and interacting with the music library API.
+Scope: The API will allow users to perform CRUD (Create, Read, Update, Delete) operations on music tracks, albums, artists, and playlists.
+Data Formats: JSON (JavaScript Object Notation) will be used for data exchange between the client and server.
+
+Endpoints:
+
+/tracks:
+GET: Retrieve a list of tracks.
+POST: Add a new track.
+/tracks/{id}:
+GET: Retrieve details of a specific track.
+PUT: Update information of a track.
+DELETE: Delete a track.
+
+
+Data Model:
+Track:
+ID
+Title
+Artist ID
+
+
+Testing:
+
+- Develop the "getAll" functionality and conduct testing to ensure its proper implementation.
+- Implement the "findById" feature and perform testing to verify its accuracy.
+- Create the "create" functionality and subject it to comprehensive testing to validate its correct operation.
+- Integrate the "update" capability and conduct thorough testing to confirm its effectiveness.
+- Establish the "delete" functionality and undergo testing to ascertain its proper execution.
+
+
+This document provides a blueprint for designing and implementing a robust RESTful API for a music library system, ensuring scalability, security, 
+and ease of use for developers and end-users alike.

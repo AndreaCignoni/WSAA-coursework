@@ -10,7 +10,7 @@ def update_file_content(username, repo_name, apikey, file_path, new_content, com
     # Create a PyGithub instance using the access token
     g = Github(apikey)
 
-    # Get the user (me)
+    # Get the user (me )
     user = g.get_user()
 
     # Get the repository
