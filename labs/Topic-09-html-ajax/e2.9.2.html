@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2.9</title>
+</head>
+<body>
+    <table class="table" id="mainTable">
+        <tr>
+            <th>Title:</th>
+            <th>Author:</th>
+            <th>Label:</th>
+            <th>Year:</th>
+            <th>Condition:</th>
+            <th>Cost:</th>
+            <th>Year Of Purchase:</th>
+        </tr>
+        <tr>
+            <td>Since I Found My Baby</td>
+            <td>The Metros</td>
+            <td>RCA Victor</td>
+            <td>1967</td>
+            <td>VG++</td>
+            <td>2150£</td>
+            <td>2011</td>
+        </tr>
+    </table>
+    <button onclick="createRow()">Create Row</button>
+</body>
+<script>
+    function createRow() {
+        var tableElement = document.getElementById('mainTable');
+        var rowCount = tableElement.rows.length; // Get the current number of rows
+        var data = {
+            cell1: '',
+            cell2: '',
+            cell3: '',
+            id: 'row_' + rowCount // Create an ID based on the current row count
+        };
+
+        var newRow = tableElement.insertRow(-1);
+        newRow.id = data.id; // Set the ID of the new row
+
+        var cellElement = newRow.insertCell(0);
+        cellElement.innerHTML = data.cell1;
+        cellElement = newRow.insertCell(1);
+        cellElement.innerHTML = data.cell2;
+        cellElement = newRow.insertCell(2);
+        cellElement.innerHTML = data.cell3;
+
+        // Save data to JSON file
+        saveToJSON(data);
+    }
+
+    function saveToJSON(data) {
+        var jsonData = JSON.stringify(data);
+        var blob = new Blob([jsonData], { type: 'application/json' });
+        var url = URL.createObjectURL(blob);
+        
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = 'data.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+</script>
+</html>

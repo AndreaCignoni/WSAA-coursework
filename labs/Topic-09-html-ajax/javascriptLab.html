@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Lab</title>
+</head>
+<body>
+    <div id='createUpdateForm' style="display:none">
+        <span id="createLabel">Create a</span><span id="updateLabel" style="display:none">update</span>Car
+        <span><button id="button-showCreate" onclick="showCreate()">Show Create</button></span>
+    </div>
+    <table id="bookTable">
+        <thead>
+            <tr>
+                <tr>
+                    <td>id</td>
+                    <td>Title</td>
+                    <td>Author</td>
+                    <td>Price</td>
+                    <td>Update</td>
+                    <td>Delete</td>
+                </tr>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Book 1</td>
+                <td>Author 1</td>
+                <td><button onclick="showUpdate(this)">Update</button></td>
+            </tr>
+            <tr>
+                <td>Book 2</td>
+                <td>Author 2</td>
+                <td><button onclick="showUpdate(this)">Update</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button id="button-doCreate" onclick="doCreate()">Create</button>
+
+
+    <script>
+        function showCreate() {
+            document.getElementById('button-showCreate').style.display = "none";
+            document.getElementById('bookTable').style.display = "none";
+            document.getElementById('createUpdateForm').style.display = "block";
+            document.getElementById('createLabel').style.display = "inline";
+            document.getElementById('updateLabel').style.display = "none";
+            document.getElementById('button-doCreate').style.display = "block";
+        }
+
+        function showUpdate(buttonElement) {
+            document.getElementById('button-showCreate').style.display = "none";
+            document.getElementById('bookTable').style.display = "none";
+            document.getElementById('createUpdateForm').style.display = "block";
+            document.getElementById('createLabel').style.display = "none";
+            document.getElementById('updateLabel').style.display = "inline";
+            document.getElementById('button-doCreate').style.display = "none";
+        }
+
+        function doCreate() {
+            clearForm();
+            showViewAll();
+        }
+        function showViewAll() {
+            document.getElementById('button-showCreate').style.display = "block";
+            document.getElementById('bookTable').style.display = "table";
+            document.getElementById('createUpdateForm').style.display = "none";
+        }
+
+        function clearForm() {
+            var form = document.getElementById('createUpdateForm');
+            form.querySelector('input[name="id"]').disabled = false;
+            form.querySelector('input[name="id"]').value = "";
+            form.querySelector('input[name="author"]').value = "";
+    // Add similar checks and actions for other input fields as needed
+        }
+        function getBookFromForm() {
+            var form = document.getElementById('createUpdateForm');
+            var book = {};
+
+            // Read values from the form and assign them to the book object
+            book.id = form.querySelector('input[name="id"]').value;
+            book.title = form.querySelector('input[name="title"]').value;
+            book.author = form.querySelector('input[name="author"]').value;
+            book.label = form.querySelector('input[name="label"]').value;
+            book.year = form.querySelector('input[name="year"]').value;
+            book.condition = form.querySelector('input[name="condition"]').value;
+            book.cost = form.querySelector('input[name="cost"]').value;
+            book.year_of_purchase = form.querySelector('input[name="year_of_purchase"]').value;
+
+            return book;
+        }
+    </script>
+</body>
+</html>
